@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98CB443E1F2B36FA00502647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB443D1F2B36FA00502647 /* AppDelegate.swift */; };
+		98CB44401F2B36FA00502647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB443F1F2B36FA00502647 /* ViewController.swift */; };
+		98CB44431F2B36FA00502647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CB44411F2B36FA00502647 /* Main.storyboard */; };
+		98CB44451F2B36FA00502647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CB44441F2B36FA00502647 /* Assets.xcassets */; };
+		98CB44481F2B36FA00502647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CB44461F2B36FA00502647 /* LaunchScreen.storyboard */; };
+		98CB44531F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB44521F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift */; };
+		98CB445E1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB445D1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98CB444F1F2B36FA00502647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CB44321F2B36F900502647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CB44391F2B36F900502647;
+			remoteInfo = CoordinateGraphicCalculator;
+		};
+		98CB445A1F2B36FA00502647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CB44321F2B36F900502647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CB44391F2B36F900502647;
+			remoteInfo = CoordinateGraphicCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98CB443A1F2B36FA00502647 /* CoordinateGraphicCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateGraphicCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB443D1F2B36FA00502647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98CB443F1F2B36FA00502647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98CB44421F2B36FA00502647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98CB44441F2B36FA00502647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98CB44471F2B36FA00502647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98CB44491F2B36FA00502647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CB444E1F2B36FA00502647 /* CoordinateGraphicCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinateGraphicCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB44521F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateGraphicCalculatorTests.swift; sourceTree = "<group>"; };
+		98CB44541F2B36FA00502647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CB44591F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinateGraphicCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB445D1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateGraphicCalculatorUITests.swift; sourceTree = "<group>"; };
+		98CB445F1F2B36FA00502647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98CB44371F2B36F900502647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB444B1F2B36FA00502647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB44561F2B36FA00502647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98CB44311F2B36F900502647 = {
+			isa = PBXGroup;
+			children = (
+				98CB443C1F2B36FA00502647 /* CoordinateGraphicCalculator */,
+				98CB44511F2B36FA00502647 /* CoordinateGraphicCalculatorTests */,
+				98CB445C1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests */,
+				98CB443B1F2B36FA00502647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98CB443B1F2B36FA00502647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98CB443A1F2B36FA00502647 /* CoordinateGraphicCalculator.app */,
+				98CB444E1F2B36FA00502647 /* CoordinateGraphicCalculatorTests.xctest */,
+				98CB44591F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98CB443C1F2B36FA00502647 /* CoordinateGraphicCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				98CB443D1F2B36FA00502647 /* AppDelegate.swift */,
+				98CB443F1F2B36FA00502647 /* ViewController.swift */,
+				98CB44411F2B36FA00502647 /* Main.storyboard */,
+				98CB44441F2B36FA00502647 /* Assets.xcassets */,
+				98CB44461F2B36FA00502647 /* LaunchScreen.storyboard */,
+				98CB44491F2B36FA00502647 /* Info.plist */,
+			);
+			path = CoordinateGraphicCalculator;
+			sourceTree = "<group>";
+		};
+		98CB44511F2B36FA00502647 /* CoordinateGraphicCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				98CB44521F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift */,
+				98CB44541F2B36FA00502647 /* Info.plist */,
+			);
+			path = CoordinateGraphicCalculatorTests;
+			sourceTree = "<group>";
+		};
+		98CB445C1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98CB445D1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift */,
+				98CB445F1F2B36FA00502647 /* Info.plist */,
+			);
+			path = CoordinateGraphicCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98CB44391F2B36F900502647 /* CoordinateGraphicCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB44621F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculator" */;
+			buildPhases = (
+				98CB44361F2B36F900502647 /* Sources */,
+				98CB44371F2B36F900502647 /* Frameworks */,
+				98CB44381F2B36F900502647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoordinateGraphicCalculator;
+			productName = CoordinateGraphicCalculator;
+			productReference = 98CB443A1F2B36FA00502647 /* CoordinateGraphicCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98CB444D1F2B36FA00502647 /* CoordinateGraphicCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB44651F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorTests" */;
+			buildPhases = (
+				98CB444A1F2B36FA00502647 /* Sources */,
+				98CB444B1F2B36FA00502647 /* Frameworks */,
+				98CB444C1F2B36FA00502647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CB44501F2B36FA00502647 /* PBXTargetDependency */,
+			);
+			name = CoordinateGraphicCalculatorTests;
+			productName = CoordinateGraphicCalculatorTests;
+			productReference = 98CB444E1F2B36FA00502647 /* CoordinateGraphicCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98CB44581F2B36FA00502647 /* CoordinateGraphicCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB44681F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorUITests" */;
+			buildPhases = (
+				98CB44551F2B36FA00502647 /* Sources */,
+				98CB44561F2B36FA00502647 /* Frameworks */,
+				98CB44571F2B36FA00502647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CB445B1F2B36FA00502647 /* PBXTargetDependency */,
+			);
+			name = CoordinateGraphicCalculatorUITests;
+			productName = CoordinateGraphicCalculatorUITests;
+			productReference = 98CB44591F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98CB44321F2B36F900502647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JiaYanwei;
+				TargetAttributes = {
+					98CB44391F2B36F900502647 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V3HMUPD5M6;
+						ProvisioningStyle = Automatic;
+					};
+					98CB444D1F2B36FA00502647 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V3HMUPD5M6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98CB44391F2B36F900502647;
+					};
+					98CB44581F2B36FA00502647 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V3HMUPD5M6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98CB44391F2B36F900502647;
+					};
+				};
+			};
+			buildConfigurationList = 98CB44351F2B36F900502647 /* Build configuration list for PBXProject "CoordinateGraphicCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98CB44311F2B36F900502647;
+			productRefGroup = 98CB443B1F2B36FA00502647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98CB44391F2B36F900502647 /* CoordinateGraphicCalculator */,
+				98CB444D1F2B36FA00502647 /* CoordinateGraphicCalculatorTests */,
+				98CB44581F2B36FA00502647 /* CoordinateGraphicCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98CB44381F2B36F900502647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB44481F2B36FA00502647 /* LaunchScreen.storyboard in Resources */,
+				98CB44451F2B36FA00502647 /* Assets.xcassets in Resources */,
+				98CB44431F2B36FA00502647 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB444C1F2B36FA00502647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB44571F2B36FA00502647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98CB44361F2B36F900502647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB44401F2B36FA00502647 /* ViewController.swift in Sources */,
+				98CB443E1F2B36FA00502647 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB444A1F2B36FA00502647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB44531F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB44551F2B36FA00502647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB445E1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98CB44501F2B36FA00502647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CB44391F2B36F900502647 /* CoordinateGraphicCalculator */;
+			targetProxy = 98CB444F1F2B36FA00502647 /* PBXContainerItemProxy */;
+		};
+		98CB445B1F2B36FA00502647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CB44391F2B36F900502647 /* CoordinateGraphicCalculator */;
+			targetProxy = 98CB445A1F2B36FA00502647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98CB44411F2B36FA00502647 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98CB44421F2B36FA00502647 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98CB44461F2B36FA00502647 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98CB44471F2B36FA00502647 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98CB44601F2B36FA00502647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98CB44611F2B36FA00502647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98CB44631F2B36FA00502647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98CB44641F2B36FA00502647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		98CB44661F2B36FA00502647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoordinateGraphicCalculator.app/CoordinateGraphicCalculator";
+			};
+			name = Debug;
+		};
+		98CB44671F2B36FA00502647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoordinateGraphicCalculator.app/CoordinateGraphicCalculator";
+			};
+			name = Release;
+		};
+		98CB44691F2B36FA00502647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CoordinateGraphicCalculator;
+			};
+			name = Debug;
+		};
+		98CB446A1F2B36FA00502647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V3HMUPD5M6;
+				INFOPLIST_FILE = CoordinateGraphicCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiaYanwei.softwares.CoordinateGraphicCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CoordinateGraphicCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98CB44351F2B36F900502647 /* Build configuration list for PBXProject "CoordinateGraphicCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB44601F2B36FA00502647 /* Debug */,
+				98CB44611F2B36FA00502647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CB44621F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB44631F2B36FA00502647 /* Debug */,
+				98CB44641F2B36FA00502647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98CB44651F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB44661F2B36FA00502647 /* Debug */,
+				98CB44671F2B36FA00502647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98CB44681F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB44691F2B36FA00502647 /* Debug */,
+				98CB446A1F2B36FA00502647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98CB44321F2B36F900502647 /* Project object */;
+}
