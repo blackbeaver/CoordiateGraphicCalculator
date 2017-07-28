@@ -14,6 +14,7 @@
 		98CB44481F2B36FA00502647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CB44461F2B36FA00502647 /* LaunchScreen.storyboard */; };
 		98CB44531F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB44521F2B36FA00502647 /* CoordinateGraphicCalculatorTests.swift */; };
 		98CB445E1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB445D1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift */; };
+		98CB446C1F2B3DAC00502647 /* GraphicCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB446B1F2B3DAC00502647 /* GraphicCalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		98CB44591F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinateGraphicCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CB445D1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateGraphicCalculatorUITests.swift; sourceTree = "<group>"; };
 		98CB445F1F2B36FA00502647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CB446B1F2B3DAC00502647 /* GraphicCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicCalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				98CB443D1F2B36FA00502647 /* AppDelegate.swift */,
 				98CB443F1F2B36FA00502647 /* ViewController.swift */,
+				98CB446B1F2B3DAC00502647 /* GraphicCalculatorView.swift */,
 				98CB44411F2B36FA00502647 /* Main.storyboard */,
 				98CB44441F2B36FA00502647 /* Assets.xcassets */,
 				98CB44461F2B36FA00502647 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CB446C1F2B3DAC00502647 /* GraphicCalculatorView.swift in Sources */,
 				98CB44401F2B36FA00502647 /* ViewController.swift in Sources */,
 				98CB443E1F2B36FA00502647 /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V3HMUPD5M6;
 				INFOPLIST_FILE = CoordinateGraphicCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V3HMUPD5M6;
 				INFOPLIST_FILE = CoordinateGraphicCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +520,7 @@
 				98CB44641F2B36FA00502647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98CB44651F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				98CB44671F2B36FA00502647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98CB44681F2B36FA00502647 /* Build configuration list for PBXNativeTarget "CoordinateGraphicCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +538,7 @@
 				98CB446A1F2B36FA00502647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
