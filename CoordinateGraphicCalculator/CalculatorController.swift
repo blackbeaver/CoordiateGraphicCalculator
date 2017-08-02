@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculatorController: UIViewController {
+    
+    
+    @IBOutlet weak var labelDisplay: UILabel!
+    
+    @IBAction func pressNumButton(_ sender: Any) {
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
