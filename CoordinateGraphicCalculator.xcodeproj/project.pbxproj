@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9895275A1F3C5FB1007DCE83 /* CalculatorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989527591F3C5FB1007DCE83 /* CalculatorCore.swift */; };
 		98CB443E1F2B36FA00502647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB443D1F2B36FA00502647 /* AppDelegate.swift */; };
 		98CB44401F2B36FA00502647 /* CalculatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB443F1F2B36FA00502647 /* CalculatorController.swift */; };
 		98CB44431F2B36FA00502647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CB44411F2B36FA00502647 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		989527591F3C5FB1007DCE83 /* CalculatorCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorCore.swift; path = CoordinateGraphicCalculator/CalculatorCore.swift; sourceTree = "<group>"; };
 		98CB443A1F2B36FA00502647 /* CoordinateGraphicCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateGraphicCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CB443D1F2B36FA00502647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98CB443F1F2B36FA00502647 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		98CB44311F2B36F900502647 = {
 			isa = PBXGroup;
 			children = (
+				989527591F3C5FB1007DCE83 /* CalculatorCore.swift */,
 				98CB443C1F2B36FA00502647 /* CoordinateGraphicCalculator */,
 				98CB44511F2B36FA00502647 /* CoordinateGraphicCalculatorTests */,
 				98CB445C1F2B36FA00502647 /* CoordinateGraphicCalculatorUITests */,
@@ -267,6 +270,7 @@
 			files = (
 				98CB446C1F2B3DAC00502647 /* GraphicCalculatorView.swift in Sources */,
 				98CB44401F2B36FA00502647 /* CalculatorController.swift in Sources */,
+				9895275A1F3C5FB1007DCE83 /* CalculatorCore.swift in Sources */,
 				98CB443E1F2B36FA00502647 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
