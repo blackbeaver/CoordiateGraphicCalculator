@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct calcultorCore {
+struct CalcultorCore {
     
     var accumulator: Double = 0
+    var result: Double?
     
     enum funcType {
         case unary((Double)->Double)
@@ -28,14 +29,21 @@ struct calcultorCore {
         ]
     
     
-    func doMath(_ cal: funcType, num: Double) {
-        switch cal {
+    mutating func doMath(_ calSymbol: String, num: Double)->Bool {
+        let calFunc = funcMap[calSymbol]!
+        switch calFunc {
         case let .binary(binaryFunc):
-            <#code#>
+            if calSymbol == "÷" && num == 0 {
+            return false
+            }
+            result = binaryFunc(accumulator, num)
         case .unary(let unaryFunc):
+            result = unaryFunc(accumulator)
         default:
-            <#code#>
+            break
         }
+        
+        return true
     }
     
 }

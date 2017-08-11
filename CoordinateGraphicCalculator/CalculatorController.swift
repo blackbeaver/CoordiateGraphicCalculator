@@ -14,6 +14,7 @@ class CalculatorController: UIViewController {
     @IBOutlet weak var labelDisplay: UILabel!
     private var isTyping: Bool = false
     private var isDouble: Bool = false
+    var calcBrain = CalcultorCore()
     
     @IBAction func pressNumButton(_ sender: UIButton) {
         if isTyping == false {
@@ -35,18 +36,17 @@ class CalculatorController: UIViewController {
 
     
     @IBAction func pressEqualButton(_ sender: UIButton) {
+        labelDisplay.text = labelDisplay.text! + " = " + "\(calcBrain.result!)"
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func pressUnaryButton(_ sender: UIButton) {
+        labelDisplay.text = sender.currentTitle! + "(" + labelDisplay.text! + ")"
+        let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
+        
+        if sender.currentTitle == "÷" && retValue == false {
+            labelDisplay.text += " = Err"
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

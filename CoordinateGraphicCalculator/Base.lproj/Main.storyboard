@@ -194,7 +194,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressEqualButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0GY-gq-eHw"/>
+                                    <action selector="pressFuncButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="spE-Ly-3zy"/>
                                 </connections>
                             </button>
                         </subviews>
