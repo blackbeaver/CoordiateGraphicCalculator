@@ -12,6 +12,8 @@ struct CalcultorCore {
     
     var accumulator: Double = 0
     var result: Double?
+    var resultIsPending: Bool = true
+    var description: String = "0"
     
     enum funcType {
         case unary((Double)->Double)

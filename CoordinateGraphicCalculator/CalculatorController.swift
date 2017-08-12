@@ -16,6 +16,10 @@ class CalculatorController: UIViewController {
     private var isDouble: Bool = false
     var calcBrain = CalcultorCore()
     
+    func printErrMsg(_ orgin: String, err: String) {
+        labelDisplay.text! += "\n" + err
+    }
+    
     @IBAction func pressNumButton(_ sender: UIButton) {
         if isTyping == false {
             labelDisplay.text = sender.currentTitle!
@@ -43,9 +47,9 @@ class CalculatorController: UIViewController {
         labelDisplay.text = sender.currentTitle! + "(" + labelDisplay.text! + ")"
         let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
         
-        if sender.currentTitle == "÷" && retValue == false {
-            labelDisplay.text += " = Err"
-        }
+//        if sender.currentTitle == "÷" && retValue == false {
+            printErrMsg(labelDisplay.text!, err: "hello")
+//        }
     }
 
 }
