@@ -40,6 +40,7 @@ struct CalcultorCore {
             }
             result = binaryFunc(accumulator, num)
         case .unary(let unaryFunc):
+            description = calSymbol + "(" + description + ")"
             result = unaryFunc(accumulator)
         default:
             break
