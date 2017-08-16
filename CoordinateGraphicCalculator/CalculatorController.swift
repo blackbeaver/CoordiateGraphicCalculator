@@ -19,8 +19,15 @@ class CalculatorController: UIViewController {
     private var labelBackGroundColor: UIColor = UIColor.darkGray
     var calcBrain = CalcultorCore()
     
-    func printErrMsg(_ orgin: String, err: String) {
-        labelDisplay.text! += "\n" + err
+    func dealError(_ whether: Bool, err: String) {
+        if whether == false {
+            labelDisplay.backgroundColor = self.view.backgroundColor
+            labelDisplay.textColor = UIColor.red
+            labelDisplay.textAlignment =
+            labelDisplay.text += err
+            backspaceButton.isHighlighted = true
+            backspaceButton.setTitleColor(UIColor.red, for: UIControlState.highlighted)
+        }
     }
     
     @IBAction func pressNumButton(_ sender: UIButton) {
@@ -47,22 +54,22 @@ class CalculatorController: UIViewController {
 
     }
     @IBAction func pressBackspace(_ sender: UIButton) {
-                labelDisplay.text = labelDisplay.text!.substring(to: labelDisplay.text!.endIndex)
-        if labelDisplay.text == nil {
+        if let idx = labelDisplay.text?.index(before: labelDisplay.text!.endIndex) {
+            labelDisplay.text = idx <= labelDisplay.text!.startIndex ? "0" :
+            labelDisplay.text?.substring(to: idx)
+            print(labelDisplay.text!)
+        }else {
             labelDisplay.text = "0"
         }
     }
+    
 
     @IBAction func pressUnaryButton(_ sender: UIButton) {
-        labelDisplay.text = sender.currentTitle! + "(" + labelDisplay.text! + ")"
-//        let retValue =
-            calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
-//        if retValue == false {
-            labelDisplay.backgroundColor = self.view.backgroundColor
-            labelDisplay.textColor = UIColor.red
-       backspaceButton.isHighlighted = true
-//        }
-    
+            calcBrain.description = labelDisplay.text!
+let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
+
+            labelDisplay.text = sender.currentTitle! + "(" + calcBrain.description + ")"
+        dealError(retValue, err: + )
     }
 
     
