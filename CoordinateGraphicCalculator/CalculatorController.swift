@@ -16,16 +16,23 @@ class CalculatorController: UIViewController {
     @IBOutlet weak var backspaceButton: UIButton!
     private var isTyping: Bool = false
     private var isDouble: Bool = false
-    private var labelBackGroundColor: UIColor = UIColor.darkGray
     var calcBrain = CalcultorCore()
     
     func dealError(_ whether: Bool, err: String) {
+        
+        let errStrAttr: [String: AnyObject] = [NSForegroundColorAttributeName: UIColor.red,
+                                            NSFontAttributeName: UIFont(name: "Helvetica", size: 33)]
+        var attrErrString = NSMutableAttributedString(string: err, attributes: errStrAttr)
+        var attrErrBodyStr = NSMutableAttributedString(string: calcBrain.description, attributes: errStrAttr)
+        
+        print(attrErrString+attrErrBodyStr)
+        
         if whether == false {
-            labelDisplay.backgroundColor = self.view.backgroundColor
-            labelDisplay.textColor = UIColor.red
-            labelDisplay.textAlignment =
-            labelDisplay.text += err
-            backspaceButton.isHighlighted = true
+            backspaceButton.backgroundColor = self.view.backgroundColor
+            backspaceButton.currentTitleColor = UIColor.red
+
+            backspaceButton.isSelected = !backspaceButton.isSelected
+            backspaceButton.isHighlighted = !backspaceButton.isHighlighted
             backspaceButton.setTitleColor(UIColor.red, for: UIControlState.highlighted)
         }
     }
@@ -68,8 +75,7 @@ class CalculatorController: UIViewController {
             calcBrain.description = labelDisplay.text!
 let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
 
-            labelDisplay.text = sender.currentTitle! + "(" + calcBrain.description + ")"
-        dealError(retValue, err: + )
+        dealError(retValue, err: "hello" )
     }
 
     
