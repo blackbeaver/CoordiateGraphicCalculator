@@ -19,22 +19,26 @@ class CalculatorController: UIViewController {
     var calcBrain = CalcultorCore()
     
     func dealError(_ whether: Bool, err: String) {
-        
         let errStrAttr: [String: AnyObject] = [NSForegroundColorAttributeName: UIColor.red,
-                                            NSFontAttributeName: UIFont(name: "Helvetica", size: 33)]
-        var attrErrString = NSMutableAttributedString(string: err, attributes: errStrAttr)
-        var attrErrBodyStr = NSMutableAttributedString(string: calcBrain.description, attributes: errStrAttr)
+                                               NSFontAttributeName: UIFont(name: "Helvetica", size: 33)!]
         
-        print(attrErrString+attrErrBodyStr)
+        var attrErrString = NSMutableAttributedString(string: err, attributes: errStrAttr)
+        var attrErrBodyStr = NSMutableAttributedString(string: calcBrain.description!, attributes: errStrAttr)
+        
+        print(attrErrString.append(attrErrBodyStr))
         
         if whether == false {
             backspaceButton.backgroundColor = self.view.backgroundColor
-            backspaceButton.currentTitleColor = UIColor.red
-
+            
             backspaceButton.isSelected = !backspaceButton.isSelected
             backspaceButton.isHighlighted = !backspaceButton.isHighlighted
             backspaceButton.setTitleColor(UIColor.red, for: UIControlState.highlighted)
+            let tmpStr = NSAttributedString(string: ")")
+            attrErrString.insert(tmpStr, at: 0)
+            labelDisplay.attributedText = attrErrString
         }
+        print(labelDisplay.text!)
+        
     }
     
     @IBAction func pressNumButton(_ sender: UIButton) {
@@ -44,8 +48,9 @@ class CalculatorController: UIViewController {
         }else {
             labelDisplay.text! += sender.currentTitle!
         }
+        calcBrain.description = labelDisplay.text!
     }
-
+    
     
     @IBAction func pressDotButton(_ sender: UIButton) {
         if isDouble == false {
@@ -53,31 +58,32 @@ class CalculatorController: UIViewController {
             isDouble = true
             isTyping = true
         }
+        calcBrain.description = labelDisplay.text!
     }
-
+    
     
     @IBAction func pressEqualButton(_ sender: UIButton) {
         labelDisplay.text = labelDisplay.text! + " = " + "\(calcBrain.result!)"
-
+        
     }
     @IBAction func pressBackspace(_ sender: UIButton) {
         if let idx = labelDisplay.text?.index(before: labelDisplay.text!.endIndex) {
             labelDisplay.text = idx <= labelDisplay.text!.startIndex ? "0" :
-            labelDisplay.text?.substring(to: idx)
+                labelDisplay.text?.substring(to: idx)
             print(labelDisplay.text!)
         }else {
             labelDisplay.text = "0"
         }
     }
     
-
+    
     @IBAction func pressUnaryButton(_ sender: UIButton) {
-            calcBrain.description = labelDisplay.text!
-let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
-
-        dealError(retValue, err: "hello" )
+//        calcBrain.description = labelDisplay.text!
+        let retValue = calcBrain.doMath(sender.currentTitle!, num: calcBrain.accumulator)
+        
+        dealError(false, err: "hello" )
     }
-
+    
     
     
     

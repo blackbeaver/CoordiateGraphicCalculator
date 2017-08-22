@@ -13,7 +13,9 @@ struct CalcultorCore {
     var accumulator: Double = 0
     var result: Double?
     var resultIsPending: Bool = true
-    var description: NSMutableAttributedString = NSMutableAttributedString("0")
+    var description: String? = nil
+
+    
     
     enum funcType {
         case unary((Double)->Double)
